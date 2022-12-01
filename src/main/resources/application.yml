@@ -1,0 +1,53 @@
+server:
+  port: 8080
+
+#---
+
+spring:
+#  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/dcbapp
+    password: Buddha-1
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+#sample:
+#  test: Sample Display Message!
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+        #exclude: "env,beans"
+
+#---
+#
+#spring:
+#  profiles: uat
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://localhost:3306/dcbapp-uat
+#    password: Buddha-1
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: 'true'
+#
+#
+#---
+#
+#spring:
+#  profiles: prod
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://localhost:3306/dcbapp-prod
+#    password: Buddha-1
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: 'true'
